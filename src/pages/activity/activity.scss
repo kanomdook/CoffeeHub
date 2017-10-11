@@ -1,0 +1,24 @@
+page-activity {
+
+    ion-content{
+        background: url(https://s-media-cache-ak0.pinimg.com/originals/c3/81/ac/c381acbe2a81b059850e8e4cd4b4f8c3.jpg);
+        background-size:cover;
+    }
+    img{
+       
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 120px;
+        height: 120px;
+        margin:-60px 0 0 -60px;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+    }
+
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+}
