@@ -7,17 +7,30 @@
       Home
     </ion-title>
     <ion-buttons end>
-        <ion-icon name="home"></ion-icon>
+      <ion-icon name="home"></ion-icon>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content >
+<ion-content>
   <ion-card class="card-background-page">
-    <img src="https://www.thpromotion.com/wp-content/uploads/2017/07/sanrio-7-11-stamp.jpg"/>
+    <img src="https://www.thpromotion.com/wp-content/uploads/2017/07/sanrio-7-11-stamp.jpg" />
   </ion-card>
   <ion-card class="card-background-page">
-    <img src="http://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/03/info-home-01.png"/>
+    <img src="http://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/03/info-home-01.png" />
   </ion-card>
-  
+
+  <div>
+    <ion-scroll scrollX="true" class="slide-x">
+      <ion-row class="row-custom">
+        <ion-col col-4 *ngFor="let data of dataListX">
+          <p class="tb">{{data.title}}</p>
+          <ion-thumbnail>
+            <img [src]="data.image">
+          </ion-thumbnail>
+        </ion-col>
+      </ion-row>
+    </ion-scroll>
+  </div>
+
 </ion-content>
