@@ -1,0 +1,15 @@
+page-product {
+    .slide-x {
+        height: 202px;
+    }
+    .row-custom {
+        flex-wrap: inherit !important;
+    }
+    [col-4] {
+        max-width: 20%;
+    }
+    .tb {
+        font-weight: bold;
+        text-align: center;
+    }
+}

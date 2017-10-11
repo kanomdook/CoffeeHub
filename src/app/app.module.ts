@@ -14,6 +14,7 @@ import { PromotionPage } from '../pages/promotion/promotion';
 import { CouponPage } from '../pages/coupon/coupon';
 import { PaymentPage } from '../pages/payment/payment';
 import { OtherPage } from '../pages/other/other';
+import { ProductPage } from '../pages/product/product';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { OtherPage } from '../pages/other/other';
     PromotionPage,
     CouponPage,
     PaymentPage,
-    OtherPage
+    OtherPage,
+    ProductPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { OtherPage } from '../pages/other/other';
     PromotionPage,
     CouponPage,
     PaymentPage,
-    OtherPage
+    OtherPage,
+    ProductPage
   ],
   providers: [
     StatusBar,
