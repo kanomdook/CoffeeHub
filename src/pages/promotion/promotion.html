@@ -7,12 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>promotion</ion-title>
+    <ion-title>Promotion</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-card class="card-background-page" *ngFor="let item of list">
+    <img [src]="item"/>
+  </ion-card>
 </ion-content>

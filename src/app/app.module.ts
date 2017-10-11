@@ -14,6 +14,7 @@ import { PromotionPage } from '../pages/promotion/promotion';
 import { CouponPage } from '../pages/coupon/coupon';
 import { PaymentPage } from '../pages/payment/payment';
 import { OtherPage } from '../pages/other/other';
+import { ActivityPage } from '../pages/activity/activity';
 
 
 @NgModule({
@@ -27,8 +28,12 @@ import { OtherPage } from '../pages/other/other';
     CouponPage,
     PaymentPage,
     OtherPage,
+<<<<<<< HEAD
 
 
+=======
+    ActivityPage
+>>>>>>> 1a75d8138b15c7e36feb35a3fab8bb893c99d671
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,8 @@ import { OtherPage } from '../pages/other/other';
     PromotionPage,
     CouponPage,
     PaymentPage,
-    OtherPage
+    OtherPage,
+    ActivityPage
   ],
   providers: [
     StatusBar,
