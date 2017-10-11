@@ -14,7 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'payment-pincode.html',
 })
 export class PaymentPincodePage {
-
+  step = 1;
+  pin = "";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -22,4 +23,8 @@ export class PaymentPincodePage {
     console.log('ionViewDidLoad PaymentPincodePage');
   }
 
+  confirm(step) {
+    // alert("AA")
+    this.step = 2;
+  }
 }
