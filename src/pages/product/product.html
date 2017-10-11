@@ -14,16 +14,14 @@
 
 
 <ion-content>
-  <div>
+  <div #myElement>
     <ion-scroll scrollX="true" class="slide-x">
-      <ion-row class="row-custom">
-        <ion-col col-4>
+      <ion-row class="row-custom" (click)="slideLeft()">
+        <ion-col col-4 *ngFor="let data of dataListX">
           <ion-thumbnail>
-            <img src="https://image.flaticon.com/icons/svg/135/135635.svg">
+            <img [src]="data.image">
           </ion-thumbnail>
-          <p class="tb">
-            ชุดสุดคุ้ม
-          </p>
+          <p class="tb">{{data.title}}</p>
         </ion-col>
       </ion-row>
     </ion-scroll>

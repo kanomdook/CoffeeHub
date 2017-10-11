@@ -47,13 +47,12 @@ import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
     CouponPage,
     PaymentPage,
     OtherPage,
-    ActivityPage,
-    PaymentPincodePage
+    ActivityPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
