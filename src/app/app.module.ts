@@ -1,3 +1,4 @@
+import { ActivityPage } from '../pages/activity/activity';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -25,7 +26,8 @@ import { OtherPage } from '../pages/other/other';
     PromotionPage,
     CouponPage,
     PaymentPage,
-    OtherPage
+    OtherPage,
+    ActivityPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { OtherPage } from '../pages/other/other';
     PromotionPage,
     CouponPage,
     PaymentPage,
-    OtherPage
+    OtherPage,
+    ActivityPage
   ],
   providers: [
     StatusBar,
