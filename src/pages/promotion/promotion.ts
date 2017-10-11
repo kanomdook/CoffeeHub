@@ -14,7 +14,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'promotion.html',
 })
 export class PromotionPage {
-  list = ['1','2','3','4','5']
+  list = ['https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
+  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
+  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
+  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
+  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg'];
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
