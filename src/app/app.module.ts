@@ -15,6 +15,7 @@ import { CouponPage } from '../pages/coupon/coupon';
 import { PaymentPage } from '../pages/payment/payment';
 import { OtherPage } from '../pages/other/other';
 import { ActivityPage } from '../pages/activity/activity';
+import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
 
 
 @NgModule({
@@ -28,12 +29,8 @@ import { ActivityPage } from '../pages/activity/activity';
     CouponPage,
     PaymentPage,
     OtherPage,
-<<<<<<< HEAD
-
-
-=======
-    ActivityPage
->>>>>>> 1a75d8138b15c7e36feb35a3fab8bb893c99d671
+    ActivityPage,
+    PaymentPincodePage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +47,8 @@ import { ActivityPage } from '../pages/activity/activity';
     CouponPage,
     PaymentPage,
     OtherPage,
-    ActivityPage
+    ActivityPage,
+    PaymentPincodePage
   ],
   providers: [
     StatusBar,

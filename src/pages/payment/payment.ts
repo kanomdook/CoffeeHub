@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PaymentPincodePage } from '../payment-pincode/payment-pincode';
 
 /**
  * Generated class for the PaymentPage page.
@@ -21,5 +22,7 @@ export class PaymentPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaymentPage');
   }
-
+  comfirmPassID(id){
+    this.navCtrl.push(PaymentPincodePage);
+  }
 }
