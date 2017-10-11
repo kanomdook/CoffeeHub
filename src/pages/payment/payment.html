@@ -35,11 +35,11 @@
     <h6>เริ่มต้นใช้งานเพียงกรอกเลขบัตรประชาชน</h6>
   </ion-item>
   <ion-item no-lines>
-    <ion-input type="text" placeholder="กรอกเลขบัตรประชาชน 13 หลัก"></ion-input>
+    <ion-input type="text" placeholder="กรอกเลขบัตรประชาชน 13 หลัก" [(ngModel)]="id"></ion-input>
   </ion-item>
   <ion-item no-lines>
     <span>เบอร์โทรศัพท์ของคุณ </span>
     <span>XXX-XXX-XXXX</span>
   </ion-item>
-  <button ion-button block color="dark-brown">เริ่มใช้งาน</button>
+  <button ion-button block color="dark-brown" (click)="comfirmPassID(id)">เริ่มใช้งาน</button>
 </ion-content>

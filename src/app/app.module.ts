@@ -15,7 +15,7 @@ import { CouponPage } from '../pages/coupon/coupon';
 import { PaymentPage } from '../pages/payment/payment';
 import { OtherPage } from '../pages/other/other';
 import { ActivityPage } from '../pages/activity/activity';
-import { ProductPage } from '../pages/product/product';
+import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { ProductPage } from '../pages/product/product';
     PaymentPage,
     OtherPage,
     ActivityPage,
-    ProductPage
+    PaymentPincodePage
   ],
   imports: [
     BrowserModule,
@@ -47,13 +47,12 @@ import { ProductPage } from '../pages/product/product';
     CouponPage,
     PaymentPage,
     OtherPage,
-    ActivityPage,
-    ProductPage
+    ActivityPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
