@@ -47,7 +47,8 @@ import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
     CouponPage,
     PaymentPage,
     OtherPage,
-    ActivityPage
+    ActivityPage,
+    PaymentPincodePage
   ],
   providers: [
     StatusBar,
