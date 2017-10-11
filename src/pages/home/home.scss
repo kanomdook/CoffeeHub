@@ -1,3 +1,23 @@
 page-home {
-
+    ion-navbar {
+        ion-avatar img {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 30px;
+            height: 30px;
+        }
+        ion-buttons {
+            font-size: 1.5em;
+        }
+    }
+    .row-custom {
+        flex-wrap: inherit !important;
+    }
+    .slide-x {
+        height: 202px;
+    }
+    .tb {
+        font-weight: bold;
+        text-align: center;
+    }
 }
