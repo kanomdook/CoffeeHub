@@ -7,14 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>payment-pincode</ion-title>
+    <ion-title>จ่ายเงิน/เติมเงิน</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <div id="step-1">
+  <div *ngIf="step == 1">
     <ion-grid>
       <ion-row>
         <ion-col col-12>
@@ -25,10 +25,10 @@
       <ion-row>
         <ion-col col-12>
           <h6>ชื่อ นามสกุล ภาษาไทย</h6>
-          <ion-item >
+          <ion-item>
             <ion-input type="text" placeholder="ชื่อ" [(ngModel)]="name"></ion-input>
           </ion-item>
-          <ion-item >
+          <ion-item>
             <ion-input type="text" placeholder="นามสกุล" [(ngModel)]="surname"></ion-input>
           </ion-item>
         </ion-col>
@@ -36,8 +36,75 @@
       <ion-row>
         <ion-col col-12>
           <h6>วันเกิด</h6>
-          <ion-item >
-              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+          <ion-item>
+            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <h6>เลขบัตรประจำตัวประชาชน</h6>
+          <ion-item>
+            <ion-input type="text" placeholder="เลขบัตรประจำตัวประชาชน" [(ngModel)]="idcard"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <h6>เลขหลังบัตรประจำตัวประชาชน</h6>
+          <ion-input type="text" placeholder="กรอกเลขหลังบัตรประจำตัวประชาชน 10 หลัก" [(ngModel)]="idcardbacknumber"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <button ion-button block color="secondary" (click)="confirm(1)">ยืนยัน</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div *ngIf="step == 2">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center col-12>
+          <h3 padding-top>กรุณาตั้ง PIN 6 หลัก</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row padding-top>
+        <ion-col text-center col-3>
+        </ion-col>
+        <ion-col text-center col-1>
+          <ion-icon name="md-radio-button-on" *ngIf="pin.length < 1"></ion-icon>
+          <ion-icon name="ios-cafe" *ngIf="pin.length > 0"></ion-icon>
+        </ion-col>
+        <ion-col text-center col-1>
+            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 2"></ion-icon>
+            <ion-icon name="ios-cafe" *ngIf="pin.length > 1"></ion-icon>
+        </ion-col>
+        <ion-col text-center col-1>
+            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 3"></ion-icon>
+            <ion-icon name="ios-cafe" *ngIf="pin.length > 2"></ion-icon>
+        </ion-col>
+        <ion-col text-center col-1>
+            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 4"></ion-icon>
+            <ion-icon name="ios-cafe" *ngIf="pin.length > 3"></ion-icon>
+        </ion-col>
+        <ion-col text-center col-1>
+            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 5"></ion-icon>
+            <ion-icon name="ios-cafe" *ngIf="pin.length > 4"></ion-icon>
+        </ion-col>
+        <ion-col text-center col-1>
+            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 6"></ion-icon>
+            <ion-icon name="ios-cafe" *ngIf="pin.length > 5"></ion-icon>
+        </ion-col>
+        <ion-col text-center col-3>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col >
+          <ion-item>
+            <ion-label >PIN</ion-label>
+            <ion-input type="text" [(ngModel)]="pin"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
