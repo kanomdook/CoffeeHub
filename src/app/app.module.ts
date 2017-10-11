@@ -15,6 +15,7 @@ import { CouponPage } from '../pages/coupon/coupon';
 import { PaymentPage } from '../pages/payment/payment';
 import { OtherPage } from '../pages/other/other';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -25,7 +26,9 @@ import { OtherPage } from '../pages/other/other';
     PromotionPage,
     CouponPage,
     PaymentPage,
-    OtherPage
+    OtherPage,
+
+
   ],
   imports: [
     BrowserModule,

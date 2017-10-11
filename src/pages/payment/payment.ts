@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'payment.html',
 })
 export class PaymentPage {
-
+  pageTitle = "จ่ายเงิน/เติมเงิน";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
