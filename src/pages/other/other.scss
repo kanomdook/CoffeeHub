@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Athiti');
 page-other {
     .segment-button.active-page {
         color: #488aff !important;
@@ -33,6 +34,9 @@ page-other {
         //         width: auto;
         //     }
         // }
+    }
+    h2{
+        font-family: 'Athiti', sans-serif;
     }
 
 }
