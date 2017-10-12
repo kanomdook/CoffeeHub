@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
 
     <ion-toolbar no-border class="scrollable-segments">
         <ion-segment [(ngModel)]="pet" >
@@ -31,31 +31,30 @@
 
       <div [ngSwitch]="pet">
           <ion-list *ngSwitchCase="'puppies'">
-            <ion-item>
+            <ion-item *ngFor="let item of product.dinks">
               <ion-thumbnail item-start>
-                <img src="./assets/image/coffee.png">
+                <img src="{{item.image}}">
               </ion-thumbnail>
-              <h2>Ruby</h2>
+              <h2>{{item.name}}</h2>
             </ion-item>
-            ...
           </ion-list>
         
           <ion-list *ngSwitchCase="'kittens'">
-            <ion-item>
+            <ion-item *ngFor="let item of product.desserts">
               <ion-thumbnail item-start>
-                <img src="./assets/image/coffee.png">
+                <img src="{{item.image}}">
               </ion-thumbnail>
-              <h2>Luna</h2>
+              <h2>{{item.name}}</h2>
             </ion-item>
             ...
           </ion-list>
 
           <ion-list *ngSwitchCase="'puppies2'">
-            <ion-item>
+            <ion-item *ngFor="let item of product.foods">
               <ion-thumbnail item-start>
-                <img src="./assets/image/coffee.png">
+                <img src="{{item.image}}">
               </ion-thumbnail>
-              <h2>Luna2</h2>
+              <h2>{{item.name}}</h2>
             </ion-item>
             ...
           </ion-list>

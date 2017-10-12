@@ -21,17 +21,17 @@ page-other {
         color: #9E9E9E !important;
     }
 
-    ion-toolbar.scrollable-segments {
-        ion-segment {
-            display: block;
-            overflow-x: scroll;
-            white-space: nowrap;
-            ion-segment-button.segment-button {
-                display: inline-block;
-                min-width: 100px;
-                width: auto;
-            }
-        }
-    }
+    // ion-toolbar.scrollable-segments {
+    //     ion-segment {
+    //         display: block;
+    //         overflow-x: scroll;
+    //         white-space: nowrap;
+    //         ion-segment-button.segment-button {
+    //             display: inline-block;
+    //             min-width: 100px;
+    //             width: auto;
+    //         }
+    //     }
+    // }
 
 }
