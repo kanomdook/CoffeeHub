@@ -25,8 +25,8 @@ import {
 })
 export class ShopLocationPage {
 
-  map: GoogleMap;
-  mapElement: HTMLElement;
+  map;
+  mapElement;
 
   constructor(
     public navCtrl: NavController, 
@@ -36,6 +36,7 @@ export class ShopLocationPage {
   ) {
 
     this.platform.ready().then((readySource)=>{
+      this.loadMap();
       console.log('Platform ready form',readySource);
     })
 
@@ -44,6 +45,8 @@ export class ShopLocationPage {
   ionViewDidLoad() {
     this.loadMap();
   }
+
+  
 
   loadMap() {
     this.mapElement = document.getElementById('map');
@@ -59,8 +62,8 @@ export class ShopLocationPage {
       }
     };
 
-    // this.map = this.googleMaps.create(this.mapElement, mapOptions);
-    this.map = new GoogleMap(this.mapElement, mapOptions);
+    this.map = this.googleMaps.create(this.mapElement, mapOptions);
+    // this.map = new GoogleMap(this.mapElement, mapOptions);
 
     // Wait the MAP_READY before using any methods.
     this.map.one(GoogleMapsEvent.MAP_READY)
@@ -77,6 +80,7 @@ export class ShopLocationPage {
               lng: 101.719783
             }
           })
+
           .then(marker => {
             marker.on(GoogleMapsEvent.MARKER_CLICK)
               .subscribe(() => {
