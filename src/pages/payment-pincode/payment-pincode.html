@@ -65,6 +65,9 @@
 
   <div *ngIf="step == 2">
     <ion-grid>
+      <ion-row padding-height>
+
+      </ion-row>
       <ion-row>
         <ion-col text-center col-12>
           <h3 padding-top>กรุณาตั้ง PIN 6 หลัก</h3>
@@ -101,12 +104,15 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col >
+        <ion-col>
           <ion-item>
             <ion-label >PIN</ion-label>
             <ion-input type="text" [(ngModel)]="pin"></ion-input>
           </ion-item>
         </ion-col>
+      </ion-row>
+      <ion-row>
+        
       </ion-row>
     </ion-grid>
   </div>
