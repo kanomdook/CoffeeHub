@@ -15,4 +15,50 @@
 
 <ion-content padding>
 
+    <ion-toolbar no-border class="scrollable-segments">
+        <ion-segment [(ngModel)]="pet" >
+          <ion-segment-button value="puppies" >
+            Kittens
+          </ion-segment-button>
+          <ion-segment-button value="kittens" >
+            Puppies
+          </ion-segment-button>
+          <ion-segment-button value="puppies2" >
+            Puppies1
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar >
+
+      <div [ngSwitch]="pet">
+          <ion-list *ngSwitchCase="'puppies'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="./assets/image/coffee.png">
+              </ion-thumbnail>
+              <h2>Ruby</h2>
+            </ion-item>
+            ...
+          </ion-list>
+        
+          <ion-list *ngSwitchCase="'kittens'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="./assets/image/coffee.png">
+              </ion-thumbnail>
+              <h2>Luna</h2>
+            </ion-item>
+            ...
+          </ion-list>
+
+          <ion-list *ngSwitchCase="'puppies2'">
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="./assets/image/coffee.png">
+              </ion-thumbnail>
+              <h2>Luna2</h2>
+            </ion-item>
+            ...
+          </ion-list>
+        </div>
+
 </ion-content>

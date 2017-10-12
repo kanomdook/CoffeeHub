@@ -68,11 +68,16 @@
       <ion-row padding-height>
 
       </ion-row>
-      <ion-row>
+      <ion-row *ngIf="step == 1">
         <ion-col text-center col-12>
           <div font-head padding-top>กรุณาตั้ง PIN 6 หลัก</div>
         </ion-col>
       </ion-row>
+      <ion-row *ngIf="step == 2">
+          <ion-col text-center col-12>
+            <div font-head padding-top>กรุณายืนยันรหัส PIN 6 หลัก</div>
+          </ion-col>
+        </ion-row>
       <ion-row padding-top>
         <ion-col text-center col-3>
         </ion-col>
