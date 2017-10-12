@@ -22,7 +22,40 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
+$tabs-background: #4f3222;
 
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+  color: rgb(252, 246, 246) ;
+}
+
+.tabs-md .tabbar {
+  background: #96ceb4 ;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+  background-color: #fff2df ;
+  // opacity: 0.5;
+  color: #f4f4f4 ;
+}
+.tabs-md .tab-button-icon {
+  color: #f4f4f4 ;
+}
+.tabs-md .tab-button {
+  color: #f4f4f4 ;
+}
+
+
+$tabs-ios-tab-text-color-active: #1F0404;
+$tabs-md-tab-text-color-active:#1B0505;
+
+$tabs-md-tab-icon-color: #f4f4f4;
+$tabs-ios-tab-icon-color: #f4f4f4;
+
+$tabs-ios-tab-text-color: #f4f4f4;
+$tabs-md-tab-text-color: #f4f4f4;
+
+$tabs-md-tab-icon-color-active: #000000;
+$tabs-ios-tab-icon-color-active: #000000;
 
 
 // Named Color Variables

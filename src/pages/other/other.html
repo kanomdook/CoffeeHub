@@ -17,20 +17,20 @@
 
     <ion-toolbar no-border class="scrollable-segments">
         <ion-segment [(ngModel)]="pet" >
-          <ion-segment-button value="puppies" >
-            Kittens
+          <ion-segment-button value="dinks" >
+            dinks
           </ion-segment-button>
-          <ion-segment-button value="kittens" >
-            Puppies
+          <ion-segment-button value="desserts" >
+            desserts
           </ion-segment-button>
-          <ion-segment-button value="puppies2" >
-            Puppies1
+          <ion-segment-button value="foods" >
+            foods
           </ion-segment-button>
         </ion-segment>
       </ion-toolbar >
 
-      <div [ngSwitch]="pet">
-          <ion-list *ngSwitchCase="'puppies'">
+      <div [ngSwitch]="pet" >
+          <ion-list *ngSwitchCase="'dinks'">
             <ion-item *ngFor="let item of product.dinks">
               <ion-thumbnail item-start>
                 <img src="{{item.image}}">
@@ -39,24 +39,22 @@
             </ion-item>
           </ion-list>
         
-          <ion-list *ngSwitchCase="'kittens'">
+          <ion-list *ngSwitchCase="'desserts'">
             <ion-item *ngFor="let item of product.desserts">
               <ion-thumbnail item-start>
                 <img src="{{item.image}}">
               </ion-thumbnail>
               <h2>{{item.name}}</h2>
             </ion-item>
-            ...
           </ion-list>
 
-          <ion-list *ngSwitchCase="'puppies2'">
+          <ion-list *ngSwitchCase="'foods'">
             <ion-item *ngFor="let item of product.foods">
               <ion-thumbnail item-start>
                 <img src="{{item.image}}">
               </ion-thumbnail>
               <h2>{{item.name}}</h2>
             </ion-item>
-            ...
           </ion-list>
         </div>
 
