@@ -83,4 +83,8 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.11" />
     <plugin name="cordova-plugin-statusbar" spec="^2.2.3" />
     <engine name="android" spec="~6.3.0" />
+    <plugin name="cordova-plugin-googlemaps" spec="^2.0.11">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDZhabBsvGSwVCHUFtGXwDIfUCyHTPMe8Q" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyDpuGYHjHFCWQmTuR1t5sKO3To643qWios" />
+    </plugin>
 </widget>
