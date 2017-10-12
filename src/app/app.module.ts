@@ -17,7 +17,7 @@ import { PaymentPage } from '../pages/payment/payment';
 import { OtherPage } from '../pages/other/other';
 import { ActivityPage } from '../pages/activity/activity';
 import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
-import { GoogleMaps } from "@ionic-native/google-maps";
+
 
 
 @NgModule({
@@ -57,7 +57,6 @@ import { GoogleMaps } from "@ionic-native/google-maps";
   providers: [
     StatusBar,
     SplashScreen,
-    GoogleMaps,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
