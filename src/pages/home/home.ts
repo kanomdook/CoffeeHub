@@ -36,7 +36,6 @@ export class HomePage {
   }
 
   location(){
-    alert("ffffffffffff");
     this.navCtrl.push(ShopLocationPage);
   }
 
