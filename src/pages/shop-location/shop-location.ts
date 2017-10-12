@@ -1,29 +1,13 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
-
-import {
-  GoogleMaps,
-  GoogleMap,
-  GoogleMapsEvent,
-  GoogleMapOptions,
-  CameraPosition,
-  MarkerOptions,
-  Marker
- } from '@ionic-native/google-maps';
-
-/**
- * Generated class for the ShopLocationPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+declare var google;
 @IonicPage()
 @Component({
   selector: 'page-shop-location',
   templateUrl: 'shop-location.html',
 })
 export class ShopLocationPage {
+<<<<<<< HEAD
 
   map;
   mapElement;
@@ -40,12 +24,23 @@ export class ShopLocationPage {
       console.log('Platform ready form',readySource);
     })
 
+=======
+  @ViewChild('map') mapElement: ElementRef;
+  private latLng: any = {};
+  public map: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.latLng = {
+      lat: 13.9381232,
+      lng: 100.71376
+    };
+>>>>>>> f3d8f2867e8bd82914fdcd9f5bdf64bf08bc0a68
   }
 
   ionViewDidLoad() {
-    this.loadMap();
+    this.initMap();
   }
 
+<<<<<<< HEAD
   
 
   loadMap() {
@@ -89,6 +84,19 @@ export class ShopLocationPage {
           });
 
       });
+=======
+  initMap() {
+    this.map = new google.maps.Map(this.mapElement.nativeElement, {
+      zoom: 17,
+      center: this.latLng
+    });
+    let marker = new google.maps.Marker({
+      draggable: false,
+      position: this.latLng,
+      map: this.map
+    });
+>>>>>>> f3d8f2867e8bd82914fdcd9f5bdf64bf08bc0a68
   }
+
 
 }

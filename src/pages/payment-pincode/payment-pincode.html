@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding no-bounce>
   <div *ngIf="step == 1">
     <ion-grid>
       <ion-row>
@@ -68,11 +68,16 @@
       <ion-row padding-height>
 
       </ion-row>
-      <ion-row>
+      <ion-row *ngIf="step == 1">
         <ion-col text-center col-12>
-          <h3 padding-top>กรุณาตั้ง PIN 6 หลัก</h3>
+          <div font-head padding-top>กรุณาตั้ง PIN 6 หลัก</div>
         </ion-col>
       </ion-row>
+      <ion-row *ngIf="step == 2">
+          <ion-col text-center col-12>
+            <div font-head padding-top>กรุณายืนยันรหัส PIN 6 หลัก</div>
+          </ion-col>
+        </ion-row>
       <ion-row padding-top>
         <ion-col text-center col-3>
         </ion-col>
@@ -81,24 +86,24 @@
           <ion-icon name="ios-cafe" *ngIf="pin.length > 0"></ion-icon>
         </ion-col>
         <ion-col text-center col-1>
-            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 2"></ion-icon>
-            <ion-icon name="ios-cafe" *ngIf="pin.length > 1"></ion-icon>
+          <ion-icon name="md-radio-button-on" *ngIf="pin.length < 2"></ion-icon>
+          <ion-icon name="ios-cafe" *ngIf="pin.length > 1"></ion-icon>
         </ion-col>
         <ion-col text-center col-1>
-            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 3"></ion-icon>
-            <ion-icon name="ios-cafe" *ngIf="pin.length > 2"></ion-icon>
+          <ion-icon name="md-radio-button-on" *ngIf="pin.length < 3"></ion-icon>
+          <ion-icon name="ios-cafe" *ngIf="pin.length > 2"></ion-icon>
         </ion-col>
         <ion-col text-center col-1>
-            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 4"></ion-icon>
-            <ion-icon name="ios-cafe" *ngIf="pin.length > 3"></ion-icon>
+          <ion-icon name="md-radio-button-on" *ngIf="pin.length < 4"></ion-icon>
+          <ion-icon name="ios-cafe" *ngIf="pin.length > 3"></ion-icon>
         </ion-col>
         <ion-col text-center col-1>
-            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 5"></ion-icon>
-            <ion-icon name="ios-cafe" *ngIf="pin.length > 4"></ion-icon>
+          <ion-icon name="md-radio-button-on" *ngIf="pin.length < 5"></ion-icon>
+          <ion-icon name="ios-cafe" *ngIf="pin.length > 4"></ion-icon>
         </ion-col>
         <ion-col text-center col-1>
-            <ion-icon name="md-radio-button-on" *ngIf="pin.length < 6"></ion-icon>
-            <ion-icon name="ios-cafe" *ngIf="pin.length > 5"></ion-icon>
+          <ion-icon name="md-radio-button-on" *ngIf="pin.length < 6"></ion-icon>
+          <ion-icon name="ios-cafe" *ngIf="pin.length > 5"></ion-icon>
         </ion-col>
         <ion-col text-center col-3>
         </ion-col>
@@ -106,13 +111,29 @@
       <ion-row>
         <ion-col>
           <ion-item>
-            <ion-label >PIN</ion-label>
+            <ion-label>PIN</ion-label>
             <ion-input type="text" [(ngModel)]="pin"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
-      <ion-row>
-        
+      <ion-row padding-top>
+        <ion-col col-4 text-center>
+          <button ion-button round outline color="dark-brown" font-size>1</button>
+          <button ion-button round outline color="dark-brown" font-size>4</button>
+          <button ion-button round outline color="dark-brown" font-size>7</button>
+        </ion-col>
+        <ion-col col-4 text-center>
+            <button ion-button round outline color="dark-brown" font-size>2</button>
+            <button ion-button round outline color="dark-brown" font-size>5</button>
+            <button ion-button round outline color="dark-brown" font-size>8</button>
+            <button ion-button round outline color="dark-brown" font-size>0</button>
+        </ion-col>
+        <ion-col col-4 text-center>
+            <button ion-button round outline color="dark-brown" font-size>3</button>
+            <button ion-button round outline color="dark-brown" font-size>6</button>
+            <button ion-button round outline color="dark-brown" font-size>9</button>
+            <button ion-button round outline color="dark-brown" font-size><ion-icon name="ios-backspace-outline"></ion-icon></button>
+        </ion-col>
       </ion-row>
     </ion-grid>
   </div>
