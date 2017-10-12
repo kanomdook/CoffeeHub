@@ -1,3 +1,4 @@
+import { ShopLocationPage } from '../pages/shop-location/shop-location';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -16,6 +17,7 @@ import { PaymentPage } from '../pages/payment/payment';
 import { OtherPage } from '../pages/other/other';
 import { ActivityPage } from '../pages/activity/activity';
 import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
+import { GoogleMaps } from "@ionic-native/google-maps";
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
     PaymentPage,
     OtherPage,
     ActivityPage,
-    PaymentPincodePage
+    PaymentPincodePage,
+    ShopLocationPage
   ],
   imports: [
     BrowserModule,
@@ -48,11 +51,13 @@ import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
     PaymentPage,
     OtherPage,
     ActivityPage,
-    PaymentPincodePage
+    PaymentPincodePage,
+    ShopLocationPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

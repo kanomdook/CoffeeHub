@@ -1,3 +1,4 @@
+import { ShopLocationPage } from '../shop-location/shop-location';
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { ActivityPage } from '../activity/activity';
@@ -32,6 +33,11 @@ export class HomePage {
   popupActivities(){
     const profileModal = this.modalCtrl.create(ActivityPage, { userId: 8675309 });
     profileModal.present();
+  }
+
+  location(){
+    alert("ffffffffffff");
+    this.navCtrl.push(ShopLocationPage);
   }
 
 }
