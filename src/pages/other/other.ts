@@ -15,9 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class OtherPage {
   tabs: number = 0;
-  pet = "puppies";
-
-
+  pet = "dinks";
+  
   product = 
     {
       "dinks": [
