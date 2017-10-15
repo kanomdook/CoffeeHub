@@ -18,6 +18,9 @@ import { OtherPage } from '../pages/other/other';
 import { ActivityPage } from '../pages/activity/activity';
 import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
 
+import { NgxQRCodeModule } from 'ngx-qrcode2';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { QrcodePage } from '../pages/qrcode/qrcode';
 
 
 @NgModule({
@@ -33,11 +36,13 @@ import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
     OtherPage,
     ActivityPage,
     PaymentPincodePage,
-    ShopLocationPage
+    ShopLocationPage,
+    QrcodePage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    NgxQRCodeModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -52,11 +57,13 @@ import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
     OtherPage,
     ActivityPage,
     PaymentPincodePage,
-    ShopLocationPage
+    ShopLocationPage,
+    QrcodePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    BarcodeScanner,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

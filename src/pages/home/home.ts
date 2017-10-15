@@ -2,6 +2,7 @@ import { ShopLocationPage } from '../shop-location/shop-location';
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { ActivityPage } from '../activity/activity';
+import { QrcodePage } from '../qrcode/qrcode';
 
 @Component({
   selector: 'page-home',
@@ -38,5 +39,7 @@ export class HomePage {
   location(){
     this.navCtrl.push(ShopLocationPage);
   }
-
+  gotoQR(){
+    this.navCtrl.push(QrcodePage);
+  }
 }
