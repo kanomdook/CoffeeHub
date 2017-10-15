@@ -28,6 +28,7 @@
     "cordova-ios": "^4.5.1",
     "cordova-plugin-device": "^1.1.6",
     "cordova-plugin-googlemaps": "^2.0.11",
+    "cordova-plugin-googlemaps-sdk": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk.git",
     "cordova-plugin-ionic-webview": "^1.1.15",
     "cordova-plugin-splashscreen": "^4.0.3",
     "cordova-plugin-statusbar": "^2.2.3",
@@ -54,11 +55,14 @@
       "ionic-plugin-keyboard": {},
       "cordova-plugin-googlemaps": {
         "API_KEY_FOR_ANDROID": "AIzaSyDZhabBsvGSwVCHUFtGXwDIfUCyHTPMe8Q",
-        "API_KEY_FOR_IOS": "AIzaSyDpuGYHjHFCWQmTuR1t5sKO3To643qWios"
+        "API_KEY_FOR_IOS": "AIzaSyDpuGYHjHFCWQmTuR1t5sKO3To643qWios",
+        "LOCATION_WHEN_IN_USE_DESCRIPTION": "Show your location on the map",
+        "LOCATION_ALWAYS_USAGE_DESCRIPTION": "Trace your location on the map"
       }
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

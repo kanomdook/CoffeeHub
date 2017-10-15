@@ -87,4 +87,5 @@
         <variable name="API_KEY_FOR_IOS" value="AIzaSyDpuGYHjHFCWQmTuR1t5sKO3To643qWios" />
     </plugin>
     <plugin name="cordova-plugin-device" spec="^1.1.6" />
+    <engine name="ios" spec="~4.5.1" />
 </widget>

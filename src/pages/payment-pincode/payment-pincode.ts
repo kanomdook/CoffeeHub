@@ -22,7 +22,7 @@ export class PaymentPincodePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaymentPincodePage');
   }
-
+  
   confirm(step) {
     // alert("AA")
     this.step = 2;
