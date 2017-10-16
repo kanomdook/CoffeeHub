@@ -13,33 +13,26 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
     this.dataListX = [{
-      title: '7 Delively',
-      image: 'http://chiangmai.siamdot.com/wp-content/uploads/2016/07/7-11-Grab-6.jpg'
+      image: '../../assets/image/SL4.jpg'
     }, {
-      title: 'สแตมป์',
-      image: 'http://chiangmai.siamdot.com/wp-content/uploads/2016/07/7-11-Grab-6.jpg'
+      image: '../../assets/image/SL5.jpg'
     }, {
-      title: 'แลกคะแนน',
-      image: 'http://chiangmai.siamdot.com/wp-content/uploads/2016/07/7-11-Grab-6.jpg'
+      image: '../../assets/image/SL3.jpg'
     }, {
-      title: 'บริการ',
-      image: 'http://chiangmai.siamdot.com/wp-content/uploads/2016/07/7-11-Grab-6.jpg'
-    }, {
-      title: 'สินค้าใหม่',
-      image: 'http://chiangmai.siamdot.com/wp-content/uploads/2016/07/7-11-Grab-6.jpg'
+      image: '../../assets/image/SL.jpg'
     }];
 
   }
 
-  popupActivities(){
+  popupActivities() {
     const profileModal = this.modalCtrl.create(ActivityPage, { userId: 8675309 });
     profileModal.present();
   }
 
-  location(){
+  location() {
     this.navCtrl.push(ShopLocationPage);
   }
-  gotoQR(){
+  gotoQR() {
     this.navCtrl.push(QrcodePage);
   }
 }

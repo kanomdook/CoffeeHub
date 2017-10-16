@@ -14,10 +14,16 @@ page-home {
         flex-wrap: inherit !important;
     }
     .slide-x {
-        height: 202px;
+        height: 142px;
     }
     .tb {
         font-weight: bold;
         text-align: center;
+    }
+    .toolbar-title-ios {
+        color: #fff !important;
+    }
+    .toolbar-background-ios {
+        background: #4f3222 !important;
     }
 }

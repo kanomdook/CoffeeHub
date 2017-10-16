@@ -6,11 +6,11 @@
     </ion-avatar>
     </ion-buttons>  
     <ion-title text-center>
-      Home
+      <img src="../../assets/image/logo.png" width="32" height="32">
     </ion-title>
     <ion-buttons end >
       <button ion-button (click)="location()">
-      <ion-icon  name="home" ></ion-icon>
+        <img src="../../assets/image/shop-icon1-01.svg" width="32" height="32">        
     </button>
     </ion-buttons>
   </ion-navbar>
@@ -28,12 +28,11 @@
   <ion-card class="card-background-page">
     <img src="./assets/image/BG2.jpg" />
   </ion-card>
-<button ion-button block (click)="gotoQR()">QR-CODE</button>
+<!-- <button ion-button block (click)="gotoQR()">QR-CODE</button> -->
   <div>
     <ion-scroll scrollX="true" class="slide-x">
       <ion-row class="row-custom">
         <ion-col col-4 *ngFor="let data of dataListX">
-          <p class="tb">{{data.title}}</p>
           <ion-thumbnail>
             <img [src]="data.image">
           </ion-thumbnail>
