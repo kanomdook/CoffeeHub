@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { ActivityPage } from '../activity/activity';
 import { QrcodePage } from '../qrcode/qrcode';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-home',
@@ -27,6 +28,9 @@ export class HomePage {
   popupActivities() {
     const profileModal = this.modalCtrl.create(ActivityPage, { userId: 8675309 });
     profileModal.present();
+  }
+  gotoProfile(){
+    this.navCtrl.push(ProfilePage);
   }
 
   location() {
