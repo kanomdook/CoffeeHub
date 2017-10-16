@@ -21,6 +21,7 @@ import { PaymentPincodePage } from '../pages/payment-pincode/payment-pincode';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QrcodePage } from '../pages/qrcode/qrcode';
+import { LoginPage } from '../pages/login/login';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { QrcodePage } from '../pages/qrcode/qrcode';
     ActivityPage,
     PaymentPincodePage,
     ShopLocationPage,
-    QrcodePage
+    QrcodePage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import { QrcodePage } from '../pages/qrcode/qrcode';
     ActivityPage,
     PaymentPincodePage,
     ShopLocationPage,
-    QrcodePage
+    QrcodePage,
+    LoginPage
   ],
   providers: [
     StatusBar,
