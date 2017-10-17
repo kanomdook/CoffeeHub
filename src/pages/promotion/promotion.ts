@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProfilePage } from '../profile/profile';
+import { ShopLocationPage } from '../shop-location/shop-location';
 
 /**
  * Generated class for the PromotionPage page.
@@ -27,4 +29,10 @@ export class PromotionPage {
     console.log('ionViewDidLoad PromotionPage');
   }
 
+  gotoProfile(){
+    this.navCtrl.push(ProfilePage);
+  }
+  location(){
+    this.navCtrl.push(ShopLocationPage);
+  }
 }
