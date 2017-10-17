@@ -1,24 +1,47 @@
 page-activity {
 
     ion-content{
-        background: url(https://s-media-cache-ak0.pinimg.com/originals/c3/81/ac/c381acbe2a81b059850e8e4cd4b4f8c3.jpg);
+        background: url("../../assets/image/Nature-Street-Bench-Chair-Bokeh-iphone-8-wallpaper-ilikewallpaper_com.jpg");
         background-size:cover;
-    }
-    img{
        
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        width: 120px;
-        height: 120px;
-        margin:-60px 0 0 -60px;
-        -webkit-animation:spin 4s linear infinite;
-        -moz-animation:spin 4s linear infinite;
-        animation:spin 4s linear infinite;
+    }
+    // img{
+       
+    //     position: absolute;
+    //     top: 20%;
+    //     left: 50%;
+    //     width: 120px;
+    //     height: 120px;
+    //     margin:-60px 0 0 -60px;
+    //     -webkit-animation:spin 4s linear infinite;
+    //     -moz-animation:spin 4s linear infinite;
+    //     animation:spin 4s linear infinite;
+    // }
+
+    // @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    // @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    // @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+    .btn-scanbarcode{
+        margin: 0px 100px 100px 90px;
     }
 
-    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+    .circle {    
+        width: 100px;
+        height: 100px;
+        background: rgb(255, 255, 255);
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        opacity: 0.7;
+        margin: 100px 150px 100px 115px;
+        .ponit{
+            text-align: center;
+            font-size: 50px;
+        }
+    }
 
+
+   
+  
 }
