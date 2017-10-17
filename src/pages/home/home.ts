@@ -14,13 +14,13 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
     this.dataListX = [{
-      image: '../../assets/image/SL4.jpg'
+      image: './assets/image/SL4.jpg'
     }, {
-      image: '../../assets/image/SL5.jpg'
+      image: './assets/image/SL5.jpg'
     }, {
-      image: '../../assets/image/SL3.jpg'
+      image: './assets/image/SL3.jpg'
     }, {
-      image: '../../assets/image/SL.jpg'
+      image: './assets/image/SL.jpg'
     }];
 
   }

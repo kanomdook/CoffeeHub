@@ -1,3 +1,5 @@
+import { PremiumProductPage } from '../pages/premium-product/premium-product';
+import { ReviewPage } from '../pages/review/review';
 import { ShopLocationPage } from '../pages/shop-location/shop-location';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -39,7 +41,9 @@ import { LoginPage } from '../pages/login/login';
     PaymentPincodePage,
     ShopLocationPage,
     QrcodePage,
-    LoginPage
+    LoginPage,
+    ReviewPage,
+    PremiumProductPage
   ],
   imports: [
     BrowserModule,
@@ -61,7 +65,9 @@ import { LoginPage } from '../pages/login/login';
     PaymentPincodePage,
     ShopLocationPage,
     QrcodePage,
-    LoginPage
+    LoginPage,
+    ReviewPage,
+    PremiumProductPage
   ],
   providers: [
     StatusBar,
