@@ -27,6 +27,7 @@ import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QrcodePage } from '../pages/qrcode/qrcode';
 import { LoginPage } from '../pages/login/login';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { LoginPage } from '../pages/login/login';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     NgxQRCodeModule
   ],
