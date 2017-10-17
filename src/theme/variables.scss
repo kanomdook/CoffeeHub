@@ -74,7 +74,8 @@ $colors: (
   dark:       #222,
   dark-brown: #4f3222,
   facebook: #4267b2,
-  tab-color: #4f3222
+  tab-color: #4f3222,
+  tab-icon:#fbf6a9
 
 );
 
@@ -85,13 +86,19 @@ $colors: (
 $navbar-ios-height: 8vh;
 $toolbar-ios-height: 8vh;
 $toolbar-background: #4f3222;
+
+$tabs-ios-tab-color-active: #feffde;
+$tabs-ios-tab-text-color-active: #fbf6a9;
+$tabs-ios-tab-icon-color-active: #fbf6a9;
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 $navbar-md-height: 8vh;
 $toolbar-md-height: 8vh;
 
-
+$tabs-md-tab-color-active: #ffffff;
+$tabs-md-tab-text-color-active: #fbf6a9;
+$tabs-md-tab-icon-color-active: #fbf6a9;
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

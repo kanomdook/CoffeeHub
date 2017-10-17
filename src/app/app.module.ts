@@ -1,3 +1,6 @@
+import { ShopDetailPage } from '../pages/shop-detail/shop-detail';
+import { ProductPage } from '../pages/product/product';
+import { ProfilePage } from '../pages/profile/profile';
 import { PremiumProductPage } from '../pages/premium-product/premium-product';
 import { ReviewPage } from '../pages/review/review';
 import { ShopLocationPage } from '../pages/shop-location/shop-location';
@@ -24,6 +27,7 @@ import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { QrcodePage } from '../pages/qrcode/qrcode';
 import { LoginPage } from '../pages/login/login';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -43,10 +47,14 @@ import { LoginPage } from '../pages/login/login';
     QrcodePage,
     LoginPage,
     ReviewPage,
-    PremiumProductPage
+    PremiumProductPage,
+    ProfilePage,
+    ProductPage,
+    ShopDetailPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     NgxQRCodeModule
   ],
@@ -67,7 +75,10 @@ import { LoginPage } from '../pages/login/login';
     QrcodePage,
     LoginPage,
     ReviewPage,
-    PremiumProductPage
+    PremiumProductPage,
+    ProfilePage,
+    ProductPage,
+    ShopDetailPage
   ],
   providers: [
     StatusBar,
