@@ -1,10 +1,14 @@
 <ion-tabs>
   <ion-tab [root]="tab1Root" tabTitle="หน้าหลัก" tabIcon="home"></ion-tab>
   <ion-tab [root]="tab2Root" tabTitle="โปรโมชั่น" tabIcon="md-albums"></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="XXX" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab5Root" tabTitle="สิ้นค้า" tabIcon="ios-basket-outline"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="คูปองของฉัน" tabIcon="ios-ice-cream"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="" ></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="สินค้า" tabIcon="ios-basket-outline"></ion-tab>
+  <ion-tab [root]="tab5Root" tabTitle="อื่น ๆ" tabIcon="md-more"></ion-tab>
 </ion-tabs>
-<ion-fab style="position:absolute; bottom:-1.5%; left:41%; ">
-  <button ion-fab style="width:80px; height:80px; background-color:bisque" ><img src="./assests/icon/review.png" alt=""></button>
-</ion-fab>
+<ion-fab bottom center>
+    <button ion-fab style="width:65px; height:65px; background-color:#4f3222" (click)="review()" ><img src="./assets/icon/review2.png" alt=""></button>
+  </ion-fab>
+<!-- 
+<ion-fab style="position:absolute; bottom:1.5%; left:43%;" >
+  <button ion-fab style="width:65px; height:65px; background-color:#4f3222" (click)="review()" ><img src="./assets/icon/review2.png" alt=""></button>
+</ion-fab> -->

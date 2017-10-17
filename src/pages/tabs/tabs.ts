@@ -1,3 +1,5 @@
+import { ProductPage } from '../product/product';
+import { App } from 'ionic-angular';
 import { ReviewPage } from '../review/review';
 import { Component } from '@angular/core';
 import { HomePage } from '../home/home';
@@ -13,11 +15,15 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = PromotionPage;
-  tab3Root = CouponPage;
-  tab4Root = ReviewPage;
+  tab3Root;
+  tab4Root = ProductPage;
+  // tab4Root = ReviewPage;
   tab5Root = OtherPage;
 
-  constructor() {
+  constructor(private app: App) {
 
+  }
+  review() {
+    this.app.getRootNav().push(ReviewPage);
   }
 }

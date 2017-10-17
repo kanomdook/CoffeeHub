@@ -1,3 +1,6 @@
+import { ShopDetailPage } from '../pages/shop-detail/shop-detail';
+import { ProductPage } from '../pages/product/product';
+import { ProfilePage } from '../pages/profile/profile';
 import { PremiumProductPage } from '../pages/premium-product/premium-product';
 import { ReviewPage } from '../pages/review/review';
 import { ShopLocationPage } from '../pages/shop-location/shop-location';
@@ -43,7 +46,10 @@ import { LoginPage } from '../pages/login/login';
     QrcodePage,
     LoginPage,
     ReviewPage,
-    PremiumProductPage
+    PremiumProductPage,
+    ProfilePage,
+    ProductPage,
+    ShopDetailPage
   ],
   imports: [
     BrowserModule,
@@ -67,7 +73,10 @@ import { LoginPage } from '../pages/login/login';
     QrcodePage,
     LoginPage,
     ReviewPage,
-    PremiumProductPage
+    PremiumProductPage,
+    ProfilePage,
+    ProductPage,
+    ShopDetailPage
   ],
   providers: [
     StatusBar,
