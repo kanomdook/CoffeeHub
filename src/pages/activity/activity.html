@@ -4,13 +4,13 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- <ion-header>
 
   <ion-navbar>
     <ion-title>activity</ion-title>
   </ion-navbar>
 
-</ion-header>
+</ion-header> -->
 
 
 <ion-content padding>
@@ -23,9 +23,6 @@
 
   <button ion-button class="btn-scanbarcode">กดเพื่อสแกนบาร์โค้ด</button>
 
-
-
-
   <ion-grid>
     <ion-row>
       
@@ -34,7 +31,7 @@
         <button ion-button >เส้นทางพิชิตแต้มสะสม</button>
     </ion-row>
     <ion-row>
-        <button ion-button >ของพรีเมี่ยม</button>
+        <button ion-button (click)="PM()">ของพรีเมี่ยม</button>
     </ion-row>
     <ion-row>
         <button ion-button >เต็มเงิน</button>

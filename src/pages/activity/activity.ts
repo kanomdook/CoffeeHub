@@ -1,3 +1,4 @@
+import { PremiumProductPage } from '../premium-product/premium-product';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -20,6 +21,10 @@ export class ActivityPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ActivityPage');
+  }
+
+  PM(){
+    this.navCtrl.push(PremiumProductPage);
   }
 
 }
