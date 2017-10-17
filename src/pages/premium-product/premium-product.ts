@@ -15,11 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PremiumProductPage {
 
+  public backgroundImage = './assets/image/premium_2.jpg';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PremiumProductPage');
+  }
+  sell(){
+    alert("แปป นะครับ ยังไม่เสร็จ T_T !! ");
   }
 
 }
