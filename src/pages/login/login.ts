@@ -16,6 +16,7 @@ import { TabsPage } from '../tabs/tabs';
   templateUrl: 'login.html',
 })
 export class LoginPage {
+  
   public backgroundImage = 'assets/image/login-bg.jpg';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

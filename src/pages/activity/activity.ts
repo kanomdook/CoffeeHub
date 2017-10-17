@@ -16,6 +16,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ActivityPage {
 
+  public backgroundImage = '../../assets/image/activity_2.jpg';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
