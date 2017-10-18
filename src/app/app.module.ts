@@ -1,3 +1,4 @@
+import { LoginEmailPage } from '../pages/login-email/login-email';
 import { ShopDetailPage } from '../pages/shop-detail/shop-detail';
 import { ProductPage } from '../pages/product/product';
 import { ProfilePage } from '../pages/profile/profile';
@@ -50,7 +51,8 @@ import { HttpModule } from '@angular/http';
     PremiumProductPage,
     ProfilePage,
     ProductPage,
-    ShopDetailPage
+    ShopDetailPage,
+    LoginEmailPage
   ],
   imports: [
     BrowserModule,
@@ -78,7 +80,8 @@ import { HttpModule } from '@angular/http';
     PremiumProductPage,
     ProfilePage,
     ProductPage,
-    ShopDetailPage
+    ShopDetailPage,
+    LoginEmailPage
   ],
   providers: [
     StatusBar,
