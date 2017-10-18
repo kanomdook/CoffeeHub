@@ -1,3 +1,4 @@
+import { ShopListPage } from '../shop-list/shop-list';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -18,5 +19,8 @@ export class OtherPage {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad OtherPage');
+  }
+  shopList(){
+    this.navCtrl.push(ShopListPage);
   }
 }

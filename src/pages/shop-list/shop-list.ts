@@ -1,24 +1,29 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+/**
+ * Generated class for the ShopListPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 declare var google;
+
 @IonicPage()
 @Component({
-  selector: 'page-shop-location',
-  templateUrl: 'shop-location.html',
+  selector: 'page-shop-list',
+  templateUrl: 'shop-list.html',
 })
-export class ShopLocationPage {
+export class ShopListPage {
   @ViewChild('map') mapElement: ElementRef;
   private latLng: any = {};
-
-  dataShop;
+  dataShop: any = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
 
   ionViewDidLoad() {
     this.initMap();
-    
   }
 
   initMap() {
@@ -43,17 +48,20 @@ export class ShopLocationPage {
     service.nearbySearch(request, (results, status) => {
       if (status == 'OK') {
         results.forEach(element => {
-          let marker = new google.maps.Marker({
-            draggable: false,
-            position: element.geometry.location,
-            map: map
+          console.log(element.name);
+
+          console.log(element.photos[0].getUrl({ 'maxWidth': 300, 'maxHeight': 300 }));
+
+          this.dataShop.push({
+            image: element.photos[0].getUrl({ 'maxWidth': 300, 'maxHeight': 300 }),
+            name: element.name
           });
 
-          google.maps.event.addListener(marker, 'click', () => {
-            alert(JSON.stringify(element));
-            this.dataShop = element;
-            console.log(this.dataShop);
-          });
+          // service.getDetails({placeId: element.place_id}, (place, status)=>{
+          //   place.photos.forEach(photo => {
+          //     console.log(photo.getUrl({'maxWidth': photo.width, 'maxHeight': photo.height}));
+          //   });
+          // });
         });
       }
     });
