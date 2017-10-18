@@ -1,3 +1,4 @@
+import { PromotionPage } from '../promotion/promotion';
 import { ShopLocationPage } from '../shop-location/shop-location';
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
@@ -38,5 +39,8 @@ export class HomePage {
   }
   gotoQR() {
     this.navCtrl.push(QrcodePage);
+  }
+  gotoPromotion(){
+    this.navCtrl.push(PromotionPage);
   }
 }
