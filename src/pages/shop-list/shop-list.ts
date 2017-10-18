@@ -17,8 +17,8 @@ declare var google;
 export class ShopListPage {
   @ViewChild('map') mapElement: ElementRef;
   private latLng: any = {};
-  dataShop:any;
-  
+  dataShop: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -48,11 +48,12 @@ export class ShopListPage {
     service.nearbySearch(request, (results, status) => {
       if (status == 'OK') {
         results.forEach(element => {
-          service.getDetails({placeId: element.place_id}, (place, status)=>{
-            console.log('=======================PLACE================');
-            console.log(place);
-            console.log('============================================');
-          });
+          console.log(element.photos[0].getUrl({ 'maxWidth': 300, 'maxHeight': 300 }));
+          // service.getDetails({placeId: element.place_id}, (place, status)=>{
+          //   place.photos.forEach(photo => {
+          //     console.log(photo.getUrl({'maxWidth': photo.width, 'maxHeight': photo.height}));
+          //   });
+          // });
         });
       }
     });
