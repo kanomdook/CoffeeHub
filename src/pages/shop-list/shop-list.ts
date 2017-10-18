@@ -23,7 +23,7 @@ export class ShopListPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ShopListPage');
+    this.initMap();
   }
 
   initMap() {
@@ -48,22 +48,11 @@ export class ShopListPage {
     service.nearbySearch(request, (results, status) => {
       if (status == 'OK') {
         results.forEach(element => {
-          
-          this.dataShop = element;
-          console.log(this.dataShop);
-          
-          let marker = new google.maps.Marker({
-            draggable: false,
-            position: element.geometry.location,
-            map: map
+          service.getDetails({placeId: element.place_id}, (place, status)=>{
+            console.log('=======================PLACE================');
+            console.log(place);
+            console.log('============================================');
           });
-
-          // google.maps.event.addListener(marker, 'click', () => {
-          //   alert(JSON.stringify(element));
-
-          //   this.dataShop = element;
-          //   console.log(this.dataShop);
-          // });
         });
       }
     });
