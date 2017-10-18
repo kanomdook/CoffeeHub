@@ -13,6 +13,26 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <div #map id="map"></div>
+
+  <ion-grid no-padding>
+    <ion-row no-padding>
+
+      <ion-col no-padding text-center *ngFor="let item of dataShop" col-4>
+        <ion-card no-padding class="cart-shop">
+          <img src="{{item.image}}" height="100px">
+          <!-- <p class="label"> -->
+          <!-- </p> -->
+        </ion-card>
+        
+        <span class="name">{{item.name}}</span>
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
+
+
+
 </ion-content>
