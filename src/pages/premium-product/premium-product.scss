@@ -31,26 +31,6 @@ page-premium-product {
     .swiper-pagination-bullet-active {
         background: #ffffff;
     }
-<<<<<<< HEAD
-
-    ion-segment {
-        display: block;
-        white-space: nowrap;
-        font-size: 0;
-        overflow: auto;
-    
-        &::-webkit-scrollbar {
-            width: 0;
-            height: 0;
-            display: none;
-        }
-    
-        ion-segment-button.segment-button {
-            display: inline-block;
-            min-width: 100px;
-            width: auto;
-        }
-=======
     .fab ion-icon {
         color: white;
     }
@@ -59,6 +39,5 @@ page-premium-product {
         border: solid 0.1em;
         border-color: white;
        
->>>>>>> 03b1bd80d93d4ca507c74f21231f96c56a885f54
     }
 }
