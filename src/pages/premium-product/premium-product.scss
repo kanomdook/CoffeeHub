@@ -1,4 +1,5 @@
 page-premium-product {
+    
     ion-content {
         background-size: cover;
     }
@@ -30,6 +31,7 @@ page-premium-product {
     .swiper-pagination-bullet-active {
         background: #ffffff;
     }
+<<<<<<< HEAD
 
     ion-segment {
         display: block;
@@ -48,5 +50,15 @@ page-premium-product {
             min-width: 100px;
             width: auto;
         }
+=======
+    .fab ion-icon {
+        color: white;
+    }
+    .fab{
+        background-color: rgba(72, 138, 255, 0);
+        border: solid 0.1em;
+        border-color: white;
+       
+>>>>>>> 03b1bd80d93d4ca507c74f21231f96c56a885f54
     }
 }

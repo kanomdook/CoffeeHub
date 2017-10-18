@@ -88,17 +88,19 @@ $toolbar-ios-height: 8vh;
 $toolbar-background: #4f3222;
 
 $tabs-ios-tab-color-active: #feffde;
-$tabs-ios-tab-text-color-active: #fbf6a9;
-$tabs-ios-tab-icon-color-active: #fbf6a9;
+$tabs-ios-tab-text-color-active: #cc9966;
+$tabs-ios-tab-icon-color-active: #cc9966;
+$fab-ios-background-color-activated: darkgrey;
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 $navbar-md-height: 8vh;
 $toolbar-md-height: 8vh;
+$toolbar-md-background: #4f3222;
 
 $tabs-md-tab-color-active: #ffffff;
-$tabs-md-tab-text-color-active: #fbf6a9;
-$tabs-md-tab-icon-color-active: #fbf6a9;
+$tabs-md-tab-text-color-active: #cc9966;
+$tabs-md-tab-icon-color-active: #cc9966;
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

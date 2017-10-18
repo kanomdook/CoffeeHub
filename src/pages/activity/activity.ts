@@ -28,5 +28,7 @@ export class ActivityPage {
   PM(){
     this.navCtrl.push(PremiumProductPage);
   }
-
+  closePage(){
+    this.navCtrl.pop();
+  }
 }

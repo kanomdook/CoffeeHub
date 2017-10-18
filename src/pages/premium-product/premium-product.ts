@@ -26,5 +26,7 @@ export class PremiumProductPage {
   sell(){
     alert("แปป นะครับ ยังไม่เสร็จ T_T !! ");
   }
-
+  closePage(){
+    this.navCtrl.pop();
+  }
 }
