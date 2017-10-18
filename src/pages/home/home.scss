@@ -29,4 +29,11 @@ page-home {
     .toolbar-background-ios {
         background: #4f3222 !important;
     }
+    [button-size] {
+        height: 53px;
+        width: 53px;
+    }
+    [nav-height]{
+        height: 4em;
+    }
 }
