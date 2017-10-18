@@ -1,3 +1,4 @@
+import { LoginEmailPage } from '../login-email/login-email';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -26,5 +27,8 @@ export class LoginPage {
   }
   gotoHomePage() {
     this.navCtrl.setRoot(TabsPage);
+  }
+  gotoLoginEmail(){
+    this.navCtrl.push(LoginEmailPage);
   }
 }

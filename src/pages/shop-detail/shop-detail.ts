@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the PremiumProductPage page.
+ * Generated class for the ShopDetailPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,21 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-premium-product',
-  templateUrl: 'premium-product.html',
+  selector: 'page-shop-detail',
+  templateUrl: 'shop-detail.html',
 })
-export class PremiumProductPage {
-
-  public backgroundImage = './assets/image/premium_2.jpg';
+export class ShopDetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PremiumProductPage');
-  }
-  sell(){
-    alert("แปป นะครับ ยังไม่เสร็จ T_T !! ");
+    console.log('ionViewDidLoad ShopDetailPage');
   }
 
 }
