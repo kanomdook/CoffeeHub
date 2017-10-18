@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'qrcode.html',
 })
 export class QrcodePage {
+  backgroundImage = 'assets/image/barcode.png';
   qrcode = null;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -24,5 +25,8 @@ export class QrcodePage {
   }
   createQrcode() {
     this.qrcode = 'https://coffeehubserver.herokuapp.com/api/users/59ccb362167c2f1100d547e5';
+  }
+  closePage(){
+    this.navCtrl.pop();
   }
 }

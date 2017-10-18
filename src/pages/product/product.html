@@ -13,9 +13,9 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content no-bounce >
 
-    <ion-toolbar  class="scrollable-segments">
+    <ion-toolbar  class="scrollable-segments" toolbar-style>
       <ion-segment [(ngModel)]="pet" mode="md" >
         <ion-segment-button value="dinks">
           <ion-icon ios="ios-cafe" md="md-cafe"></ion-icon>
@@ -32,7 +32,8 @@
       </ion-segment>
     </ion-toolbar>
 
-
+    <ion-scroll scrollY="true" scroll-size>
+   
   <div [ngSwitch]="pet">
     <ion-list *ngSwitchCase="'dinks'">
       <ion-item *ngFor="let item of product.dinks">
@@ -64,5 +65,5 @@
       </ion-item>
     </ion-list>
   </div>
-
+</ion-scroll>
 </ion-content>

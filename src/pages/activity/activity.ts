@@ -1,3 +1,4 @@
+import { QrcodePage } from '../qrcode/qrcode';
 import { PremiumProductPage } from '../premium-product/premium-product';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -30,5 +31,8 @@ export class ActivityPage {
   }
   closePage(){
     this.navCtrl.pop();
+  }
+  showQrcode(){
+    this.navCtrl.setRoot(QrcodePage);
   }
 }

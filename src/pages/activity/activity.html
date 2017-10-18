@@ -1,4 +1,3 @@
-
 <!-- <ion-header>
 
   <ion-navbar>
@@ -9,67 +8,54 @@
 
 
 <ion-content no-bounce [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
-    <ion-fab right>
-        <button ion-fab mini (click)="closePage()"><ion-icon name="md-close-circle"></ion-icon></button>
-      </ion-fab>
-  <div>
-    <h2 class="ponit">9</h2>
-    <h2 class="cup-coim">CUP COIN</h2>
-  </div>
+  <ion-fab right>
+    <button ion-fab mini (click)="closePage()">
+      <ion-icon name="md-close-circle"></ion-icon>
+    </button>
+  </ion-fab>
+  <ion-grid>
+    <ion-row justify-content-center top-padding>
+      <ion-col col-8>
+        <img src="./assets/image/activity_4.png" alt="">
+        <div top-padding2>
+          <h2 class="ponit">9</h2>
+          <h2 class="cup-coin">CUP COIN</h2>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 
   <!-- <div class="name">
     <h2>amonrat chantawon</h2>
   </div> -->
 
-  <ion-grid class="btn-scanbarcode">
-    <ion-row>
-      <ion-col col-1>
-      </ion-col>
+  <ion-grid class="topmargin">
+    <ion-row justify-content-center>
       <ion-col col-10 class="text">
-          <h2>Amonrat Chantawon</h2>
-      </ion-col>
-      <ion-col col-1>
+        <h2>Amonrat Chantawon</h2>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col col-1>
-      </ion-col>
-      <ion-col col-10>
-        <button ion-button outline block large>กดเพื่อสแกนบาร์โค้ด</button>
-      </ion-col>
-      <ion-col col-1>
+    <ion-row no-padding justify-content-center>
+      <ion-col col-10 no-padding>
+        <!-- <button ion-button outline block large (click)="showQrcode()">กดเพื่อสแกนบาร์โค้ด</button> -->
+        <button ion-button clear (click)="showQrcode()" scanbtn-size><img src="./assets/image/scanicon.png" alt=""></button>
       </ion-col>
     </ion-row>
-    <ion-row>
-
-    </ion-row>
-    <ion-row>
-      <ion-col col-1>
-      </ion-col>
-      <ion-col col-10>
+    <ion-row justify-content-center no-padding>
+      <ion-col col-10 no-padding>
         <button ion-button outline block large>เส้นทางพิชิตแต้มสะสม</button>
       </ion-col>
-      <ion-col col-1>
-      </ion-col>
     </ion-row>
-    <ion-row>
-    </ion-row>
-    <ion-row>
-      <ion-col col-1>
-      </ion-col>
-      <ion-col col-10>
+    <ion-row justify-content-center no-padding>
+      <ion-col col-10 no-padding>
         <button ion-button outline block large (click)="PM()">ของพรีเมี่ยม</button>
       </ion-col>
-      <ion-col col-1>
-      </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col col-1>
-      </ion-col>
-      <ion-col col-10>
+    <ion-row justify-content-center no-padding>
+      <ion-col col-10 no-padding>
         <button ion-button outline block large>เต็มเงิน</button>
-      </ion-col>
-      <ion-col col-1>
       </ion-col>
     </ion-row>
   </ion-grid>

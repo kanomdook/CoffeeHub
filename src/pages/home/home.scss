@@ -3,7 +3,6 @@ page-home {
         ion-avatar img {
             border-radius: 50%;
             border: solid white;
-            border-radius: 50%;
             border-width: 2px;
             overflow: hidden;
             width: 42px;
@@ -18,6 +17,9 @@ page-home {
     }
     .slide-x {
         height: 142px;
+    }
+    .slide-x2 {
+        height: 228px;
     }
     .tb {
         font-weight: bold;
@@ -35,5 +37,17 @@ page-home {
     }
     [nav-height]{
         height: 4em;
+    }
+    [img-size]{
+        width: 100%;
+        height: 14vh;
+    }
+    [col-img-size]{
+        width: 35vw;
+        
+        
+    }
+    .card-size{
+        height: 58%;
     }
 }

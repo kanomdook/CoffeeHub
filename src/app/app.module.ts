@@ -1,3 +1,4 @@
+import { NewProductPage } from '../pages/new-product/new-product';
 import { SegmentButton } from 'ionic-angular/es2015';
 import { LoginEmailPage } from '../pages/login-email/login-email';
 import { ShopDetailPage } from '../pages/shop-detail/shop-detail';
@@ -54,7 +55,8 @@ import { HttpModule } from '@angular/http';
     ProfilePage,
     ProductPage,
     ShopDetailPage,
-    LoginEmailPage
+    LoginEmailPage,
+    NewProductPage
   ],
   imports: [
     BrowserModule,
@@ -85,7 +87,8 @@ import { HttpModule } from '@angular/http';
     ProfilePage,
     ProductPage,
     ShopDetailPage,
-    LoginEmailPage
+    LoginEmailPage,
+    NewProductPage
   ],
   providers: [
     StatusBar,
