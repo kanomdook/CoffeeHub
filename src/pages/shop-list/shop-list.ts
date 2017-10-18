@@ -1,24 +1,29 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+/**
+ * Generated class for the ShopListPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 declare var google;
+
 @IonicPage()
 @Component({
-  selector: 'page-shop-location',
-  templateUrl: 'shop-location.html',
+  selector: 'page-shop-list',
+  templateUrl: 'shop-list.html',
 })
-export class ShopLocationPage {
+export class ShopListPage {
   @ViewChild('map') mapElement: ElementRef;
   private latLng: any = {};
-
-  dataShop;
-
+  dataShop:any;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
   }
 
   ionViewDidLoad() {
-    this.initMap();
-    
+    console.log('ionViewDidLoad ShopListPage');
   }
 
   initMap() {
@@ -51,6 +56,7 @@ export class ShopLocationPage {
 
           google.maps.event.addListener(marker, 'click', () => {
             alert(JSON.stringify(element));
+
             this.dataShop = element;
             console.log(this.dataShop);
           });
