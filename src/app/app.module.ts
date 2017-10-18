@@ -1,3 +1,4 @@
+import { SegmentButton } from 'ionic-angular/es2015';
 import { LoginEmailPage } from '../pages/login-email/login-email';
 import { ShopDetailPage } from '../pages/shop-detail/shop-detail';
 import { ProductPage } from '../pages/product/product';
@@ -31,6 +32,7 @@ import { LoginPage } from '../pages/login/login';
 import { HttpModule } from '@angular/http';
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -57,7 +59,9 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{
+      SegmentButton:'segment'
+    }),
     NgxQRCodeModule
   ],
   bootstrap: [IonicApp],
