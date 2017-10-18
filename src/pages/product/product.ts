@@ -46,6 +46,31 @@ export class ProductPage {
             "name": "กาแฟเย็นเวียดนาม",
             "image": "https://img.kapook.com/u/2016/surauch/cOOK/coffee11.jpg",
             "price":"79"
+        },
+        {
+            "name": "เมลโล่มอคค่า (Mellow Mocha)",
+            "image": "https://img.kapook.com/u/2016/surauch/cook1/coffee1_1.jpg",
+            "price":"79"
+        },
+        {
+            "name": "อัฟโฟกาโต (Affogato)",
+            "image": "https://img.kapook.com/u/2016/surauch/cOOK/coffee2.jpg",
+            "price":"79"
+        },
+        {
+            "name": "กาแฟนมฟองละมุน",
+            "image": "https://img.kapook.com/u/2016/surauch/cOOK/coffee7.jpg",
+            "price":"79"
+        },
+        {
+            "name": "กาแฟเย็นกลิ่นซินนามอน",
+            "image": "https://img.kapook.com/u/2016/surauch/cOOK/coffee10.jpg",
+            "price":"79"
+        },
+        {
+            "name": "กาแฟเย็นเวียดนาม",
+            "image": "https://img.kapook.com/u/2016/surauch/cOOK/coffee11.jpg",
+            "price":"79"
         }
     ],
     "desserts": [
