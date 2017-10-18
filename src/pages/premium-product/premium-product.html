@@ -7,7 +7,7 @@
 </ion-header> -->
 
 
-<ion-content [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
+<ion-content no-bounce [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">
 
   <div>
     <h2 class="ponit">9</h2>
@@ -33,7 +33,7 @@
         <ion-col col-1>
         </ion-col>
         <ion-col col-10>
-          <button ion-button block large color="dark-brown" (click)="sell()">ซื้อสินค้าพรีเมี่ยม</button>
+          <button ion-button block outline large color="light" (click)="sell()">ซื้อสินค้าพรีเมี่ยม</button>
         </ion-col>
         <ion-col col-1>
         </ion-col>
