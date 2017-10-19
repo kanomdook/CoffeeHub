@@ -16,11 +16,11 @@ import { ShopLocationPage } from '../shop-location/shop-location';
   templateUrl: 'promotion.html',
 })
 export class PromotionPage {
-  list = ['https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
-  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
-  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
-  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg',
-  'https://daeuwum0jyqvu.cloudfront.net/wp-content/uploads/2017/09/article-7-11-stamp.jpg'];
+  list = ['./assets/image/promotion_pic.jpg',
+  './assets/image/promotion_pic.jpg',
+  './assets/image/promotion_pic.jpg',
+  './assets/image/promotion_pic.jpg',
+  './assets/image/promotion_pic.jpg'];
   
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

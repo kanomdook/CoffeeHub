@@ -54,23 +54,23 @@ export class HomePage {
       image: './assets/image/promotion/promotion8.jpg'
     }];
     this.shopData = [{
-      image: './assets/image/nameshop.jpg'
+      image: './assets/image/shop/nameshop.jpg'
     }, {
-      image: './assets/image/nameshop2.jpg'
+      image: './assets/image/shop/nameshop2.jpg'
     }, {
-      image: './assets/image/nameshop3.jpg'
+      image: './assets/image/shop/nameshop3.jpg'
     }, {
-      image: './assets/image/nameshop4.jpg'
+      image: './assets/image/shop/nameshop4.jpg'
     },];
 
     this.shopData2 = [{
-      image: './assets/image/nameshop5.jpg'
+      image: './assets/image/shop/nameshop5.jpg'
     }, {
-      image: './assets/image/nameshop6.jpg'
+      image: './assets/image/shop/nameshop6.jpg'
     }, {
-      image: './assets/image/nameshop7.jpg'
+      image: './assets/image/shop/nameshop7.jpg'
     }, {
-      image: './assets/image/nameshop8.jpg'
+      image: './assets/image/shop/nameshop8.jpg'
     }];
 
   }
