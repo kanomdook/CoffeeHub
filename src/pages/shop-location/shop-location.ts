@@ -1,3 +1,4 @@
+
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 declare var google;
@@ -46,7 +47,13 @@ export class ShopLocationPage {
           let marker = new google.maps.Marker({
             draggable: false,
             position: element.geometry.location,
-            map: map
+            map: map,
+            icon:"./assets/image/coffee-n-tea.png"
+            // icon:  {
+            //   url: '../../assets/image/map-pin-746123_1920.png',
+            //   anchor: new google.maps.Point(10, 10),
+            //   scaledSize: new google.maps.Size(30, 50)
+            // }
           });
 
           google.maps.event.addListener(marker, 'click', () => {

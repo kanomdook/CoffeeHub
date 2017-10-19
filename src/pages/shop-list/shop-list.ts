@@ -48,9 +48,10 @@ export class ShopListPage {
     service.nearbySearch(request, (results, status) => {
       if (status == 'OK') {
         results.forEach(element => {
-          console.log(element.name);
+          // console.log(element);
+          console.log(element.geometry.location.lat() +"         "+ element.geometry.location.lng() );
 
-          console.log(element.photos[0].getUrl({ 'maxWidth': 300, 'maxHeight': 300 }));
+          // console.log(element.photos[0].getUrl({ 'maxWidth': 300, 'maxHeight': 300 }));
 
           this.dataShop.push({
             image: element.photos[0].getUrl({ 'maxWidth': 300, 'maxHeight': 300 }),
