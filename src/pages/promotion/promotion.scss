@@ -1,9 +1,25 @@
 page-promotion {
-    ion-toolbar {
+    // ion-toolbar {
+    //     ion-avatar img {
+    //         border-radius: 50%;
+    //         border: solid white;
+    //         border-radius: 50%;
+    //         border-width: 2px;
+    //         overflow: hidden;
+    //         width: 42px;
+    //         height: 42px;
+    //     }
+    //     ion-buttons {
+    //         font-size: 1.5em;
+    //     }
+    // }
+    // [tool-height]{
+    //     height: 4em;
+    // }
+    ion-navbar {
         ion-avatar img {
             border-radius: 50%;
             border: solid white;
-            border-radius: 50%;
             border-width: 2px;
             overflow: hidden;
             width: 42px;
@@ -13,7 +29,16 @@ page-promotion {
             font-size: 1.5em;
         }
     }
-    [tool-height]{
+
+    [button-size] {
+        height: 53px;
+        width: 53px;
+    }
+    [nav-height]{
         height: 4em;
+    }
+    [img-size]{
+        width: 100%;
+        height: 14vh;
     }
 }
