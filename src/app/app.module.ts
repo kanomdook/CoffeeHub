@@ -64,7 +64,8 @@ import { HttpModule } from '@angular/http';
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp,{
-      SegmentButton:'segment'
+      SegmentButton:'segment',
+      mode: 'ios'
     }),
     NgxQRCodeModule
   ],
